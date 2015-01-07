@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cs.uml.edu.heartbeats" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cs.uml.edu.heartbeats.mainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="cs.uml.edu.heartbeats.loginActivity"
+            android:label="Heart Beats" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="cs.uml.edu.heartbeats.WearListener" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name="cs.uml.edu.heartbeats.Banner"
+            android:label="@string/title_activity_banner" >
+            <intent-filter>
+                <action android:name="cs.uml.edu.heartbeats.updateui">
+                </action>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
