@@ -160,7 +160,7 @@ public class loginActivity extends Activity {
         if (id == R.id.action_about) {
             AlertDialog alertDialog = new AlertDialog.Builder(loginActivity.this).create();
             alertDialog.setTitle("About");
-            alertDialog.setMessage("Developed for 91.580 guided by Prof.Guanling Chen in UMass Lowell Developed by Shashank HR and Vignesh Dhamodaran ");
+            alertDialog.setMessage("Developed for 91.580 guided by Prof.Guanling Chen in UMass Lowell Developed by Shashank HR");
             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
